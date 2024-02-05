@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "db:migrate": "node src/bin/migrate.js",
+    "db:seed": "node src/bin/seed.js",
+    "db:create": "npm run db:migrate && npm run db:seed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -7,7 +7,7 @@ require("dotenv").config();
 const { faker } = require("@faker-js/faker");
 
 // Import database client
-const database = require("../database/client");
+const database = require("../database/config.js");
 
 const seed = async () => {
   try {
